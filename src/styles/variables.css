@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  /* Colors */
+  --color-bg: #1a1a1d;
+  /* Deep Obsidian */
+  --color-surface: #1E1E1E;
+  --color-surface-hover: #252525;
+
+  --color-primary: #00bfff;
+  /* Deep Sky Blue - Restored */
+  --color-primary-glow: rgba(0, 191, 255, 0.4);
+  --color-primary-dim: rgba(0, 191, 255, 0.1);
+
+  --color-secondary: #000080;
+  /* Navy Blue */
+
+  --color-text-main: #ffffff;
+  --color-text-muted: #a0a8c0;
+
+  --color-accent-purple: #bd00ff;
+  /* Kept for subtle accents if needed */
+
+  /* Glassmorphism */
+  /* Glassmorphism - Strengthened */
+  --glass-bg: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-blur: 16px;
+
+  /* Shadows */
+  --glow-primary: 0 0 20px var(--color-primary-glow);
+  --glow-text: 0 0 10px var(--color-primary-glow);
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --grid-color: rgba(255, 255, 255, 0.03);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
