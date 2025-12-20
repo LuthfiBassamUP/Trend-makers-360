@@ -1,26 +1,50 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, canonical, type = 'website' }) => {
+const SEO = ({
+    title,
+    description,
+    keywords,
+    image,
+    canonical,
+    type = 'website'
+}) => {
     const siteName = 'Trend Makers 360';
-    const fullTitle = title ? `${title} | ${siteName}` : siteName;
+    // If title is provided, append site name. If not, use the default title requested.
+    const fullTitle = title
+        ? `${title} | ${siteName}`
+        : 'Trend Makers 360 | Japanese, German & Digital Marketing for Colleges';
+
+    const defaultDescription = "Premier Foreign Language Training (Japanese JLPT, German) and specialized Digital Marketing for Colleges. We provide expert Social Media Management and Research Support for institutions across South India";
+    const metaDescription = description || defaultDescription;
+
+    const defaultKeywords = "Japanese JLPT Training, German Language Training, Digital Marketing for Colleges, Social Media Management for Colleges, Foreign Language Training, IELTS Coaching, GATE Exam Preparation, Scopus Publication Support, Educational Marketing South India";
+    const metaKeywords = keywords || defaultKeywords;
+
+    const defaultImage = 'https://www.trendmakers360.in/og-image.png'; // Using the one we copied
+    const metaImage = image || defaultImage;
+
+    const defaultCanonical = canonical || 'https://www.trendmakers360.in';
 
     return (
         <Helmet>
             <title>{fullTitle}</title>
-            <meta name="description" content={description} />
-            <link rel="canonical" href={canonical} />
+            <meta name="description" content={metaDescription} />
+            <meta name="keywords" content={metaKeywords} />
+            <link rel="canonical" href={defaultCanonical} />
 
             {/* Open Graph */}
             <meta property="og:type" content={type} />
-            <meta property="og:title" content={fullTitle} />
-            <meta property="og:description" content={description} />
+            <meta property="og:title" content="Trend Makers 360 - Empowering Institutions for a Smarter Tomorrow" />
+            <meta property="og:description" content="From Ideas to Innovation. Leading the way in digital visibility and academic growth for colleges in Tamil Nadu, Kerala, and Andhra Pradesh" />
             <meta property="og:site_name" content={siteName} />
+            <meta property="og:image" content={metaImage} />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={fullTitle} />
-            <meta name="twitter:description" content={description} />
+            <meta name="twitter:description" content={metaDescription} />
+            <meta name="twitter:image" content={metaImage} />
         </Helmet>
     );
 };

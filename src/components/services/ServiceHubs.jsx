@@ -38,7 +38,7 @@ const HubCard = ({ title, services, icon: Icon, delay }) => (
                 borderRadius: '12px',
                 background: 'rgba(0, 243, 255, 0.1)',
                 color: 'var(--color-primary)'
-            }}>
+            }} aria-label={`${title} Icon - Trend Makers 360`}>
                 <Icon size={32} />
             </div>
             <h3 style={{ fontSize: '1.8rem', fontWeight: '700' }}>{title}</h3>

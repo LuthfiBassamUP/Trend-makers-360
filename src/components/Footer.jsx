@@ -61,6 +61,15 @@ const Footer = () => {
                     }}>
                         "From Ideas to Innovation. <br />From Learning to Leadership."
                     </p>
+                    <p style={{
+                        color: 'var(--color-text-muted)',
+                        fontSize: '0.8rem',
+                        maxWidth: '500px',
+                        marginBottom: '2rem',
+                        opacity: 0.7
+                    }}>
+                        Best Digital Marketing Agency for Colleges in Chennai/Hyderabad & Leading Foreign Language Training Institute.
+                    </p>
 
                     <div style={{
                         display: 'grid',

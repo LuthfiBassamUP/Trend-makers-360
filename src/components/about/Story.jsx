@@ -45,7 +45,7 @@ const Story = () => {
                         </p>
                     </div>
                     <p>
-                        Today, we're proud to serve <span style={{ color: 'var(--color-primary)' }}>20+ educational institutions</span> across Tamil Nadu, Kerala, and Andhra Pradesh, having delivered over 1000 creative assets and countless successful campaigns.
+                        Today, we're proud to serve <span style={{ color: 'var(--color-primary)' }}>20+ educational institutions</span> across Tamil Nadu, Kerala, and Andhra Pradesh, solidifying our reputation as the <strong>Best Digital Marketing Agency for Colleges in Chennai and Hyderabad</strong>. We have delivered over 1000 creative assets and countless successful campaigns.
                     </p>
                 </motion.div>
             </div>

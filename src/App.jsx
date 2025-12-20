@@ -63,6 +63,11 @@ function App() {
                 <Route path="/services/exam-prep" element={<ExamPrep />} />
                 <Route path="/services/research-support" element={<ResearchSupport />} />
 
+                {/* SEO Keyword Routes */}
+                <Route path="/japanese-jlpt-training" element={<LanguageHub />} />
+                <Route path="/german-language-training" element={<LanguageHub />} />
+                <Route path="/digital-marketing-for-colleges" element={<Services />} />
+
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </AnimatePresence>
