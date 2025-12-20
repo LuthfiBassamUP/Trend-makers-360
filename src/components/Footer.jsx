@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import '../styles/variables.css';
+import logo from '../assets/Logo_white.png';
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                 {/* Top Row: Logo */}
                 <div>
                     <img
-                        src="/src/assets/Logo_white.png"
+                        src={logo}
                         alt="Trend Makers 360"
                         style={{ height: '50px', filter: 'brightness(1.1)' }}
                     />

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import '../styles/variables.css';
+import logo from '../assets/Logo_white.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
                         style={{ position: 'relative' }}
                     >
                         <motion.img
-                            src="/src/assets/Logo_white.png"
+                            src={logo}
                             alt="Trend Makers 360"
                             style={{
                                 height: '40px',
