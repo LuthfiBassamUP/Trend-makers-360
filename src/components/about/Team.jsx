@@ -46,9 +46,9 @@ const TeamCard = ({ title, count, icon: Icon, description }) => (
 
 const Team = () => {
     const teams = [
-        { title: "Creative Team", count: "5+", icon: PenTool, description: "Designers & Content Creators" },
-        { title: "Strategy Team", count: "3+", icon: Lightbulb, description: "Marketing Strategists" },
-        { title: "Tech Team", count: "4+", icon: Code, description: "Developers & SEO Experts" },
+        { title: "Creative Team", count: "15+", icon: PenTool, description: "Designers & Content Creators" },
+        { title: "Strategy Team", count: "10+", icon: Lightbulb, description: "Marketing Strategists" },
+        { title: "Tech Team", count: "12+", icon: Code, description: "Developers & SEO Experts" },
     ];
 
     return (

@@ -81,7 +81,24 @@ const Footer = () => {
                         <div>
                             <h4 style={{ color: 'var(--color-primary)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase' }}>Contact</h4>
                             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>hello@trendmakers360.in</p>
-                            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>+91 98765 43210</p>
+                            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>+91 87544 77912</p>
+                        </div>
+                        <div>
+                            <h4 style={{ color: 'var(--color-primary)', marginBottom: '0.5rem', fontSize: '0.9rem', textTransform: 'uppercase' }}>Quick Links</h4>
+                            <ul style={{ listStyle: 'none', padding: 0 }}>
+                                {['Home', 'About', 'Services', 'Contact'].map((item) => (
+                                    <li key={item} style={{ marginBottom: '0.5rem' }}>
+                                        <Link
+                                            to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                                            style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', textDecoration: 'none', transition: 'color 0.2s' }}
+                                            onMouseEnter={(e) => e.target.style.color = 'var(--color-primary)'}
+                                            onMouseLeave={(e) => e.target.style.color = 'var(--color-text-muted)'}
+                                        >
+                                            {item}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import '../styles/variables.css';
+import logo from '../assets/Logo_white.png';
 
 const KineticRibbon = () => {
     const { scrollY } = useScroll();
@@ -97,7 +98,7 @@ const KineticRibbon = () => {
                             </span>
                             {/* Logo Icon Mark */}
                             <img
-                                src="/src/assets/Logo_white.png"
+                                src={logo}
                                 alt="mark"
                                 style={{ height: '30px', opacity: 0.5 }}
                             />
