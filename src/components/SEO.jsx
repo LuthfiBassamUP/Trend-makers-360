@@ -13,12 +13,12 @@ const SEO = ({
     // If title is provided, append site name. If not, use the default title requested.
     const fullTitle = title
         ? `${title} | ${siteName}`
-        : 'Trend Makers 360 | Japanese, German & Digital Marketing for Colleges';
+        : 'Trend Makers 360 | Japanese & German Training | Digital Marketing for Colleges';
 
-    const defaultDescription = "Premier Foreign Language Training (Japanese JLPT, German) and specialized Digital Marketing for Colleges. We provide expert Social Media Management and Research Support for institutions across South India";
+    const defaultDescription = "Premier Foreign Language Training in Japanese (JLPT) and German. We provide specialized Social Media Management and Digital Marketing for colleges across South India";
     const metaDescription = description || defaultDescription;
 
-    const defaultKeywords = "Japanese JLPT Training, German Language Training, Digital Marketing for Colleges, Social Media Management for Colleges, Foreign Language Training, IELTS Coaching, GATE Exam Preparation, Scopus Publication Support, Educational Marketing South India";
+    const defaultKeywords = "Japanese JLPT training, German language training, digital marketing for colleges, social media management for colleges, foreign language training";
     const metaKeywords = keywords || defaultKeywords;
 
     const defaultImage = 'https://www.trendmakers360.in/og-image.png'; // Using the one we copied

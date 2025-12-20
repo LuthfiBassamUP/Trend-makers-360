@@ -33,7 +33,7 @@ const Map = () => {
                 background: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/India_location_map.svg/866px-India_location_map.svg.png") no-repeat',
                 backgroundPosition: 'center 80%', // Focus on South India
                 backgroundSize: 'cover',
-                opacity: 0.6, // Increased visibility
+                opacity: 100, // Increased visibility
                 filter: 'invert(1) hue-rotate(180deg) brightness(1.2)' // Make it look like a cool tech blueprint
             }} />
 
