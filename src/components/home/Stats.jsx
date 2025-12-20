@@ -6,7 +6,7 @@ const Stats = () => {
         { label: "Institutions", value: "20+" },
         { label: "Creatives", value: "1000+" },
         { label: "States", value: "3" },
-        { label: "Years", value: "2+" }
+        { label: "Years", value: "3+" }
     ];
 
     return (
